@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(57, 36, 51);
+}
+
+p{
+font-family: cheap-pine, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white; 
+}
+
+.line{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white; 
+    text-align: left; 
+    text-align: justify;
+}
+
+h2{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;  
+}
+
+.preface{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;  
+    display: grid;
+    margin: auto 45px auto 45px;
+}
+
+.linegroup:nth-of-type(3n+1){
+    text-align: center;
+}
+
+.linegroup:nth-of-type(3n+2){
+    text-align: center;
+}
+
+.linegroup:nth-of-type(3n+3){
+    text-align: center;
+}
+
+.sidenote_right{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white; 
+}
+/*---------smart phones----------*/
+@media only screen and (max-width: 800px){
+p{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+}
+
+
+/*--------tablets-----------------*/
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+p{
+    font-family: cheap-pine, sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+}
