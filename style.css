@@ -36,14 +36,27 @@ h2{
 
 .linegroup:nth-of-type(3n+1){
     text-align: center;
+    font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: white;
+
 }
 
 .linegroup:nth-of-type(3n+2){
     text-align: center;
+    font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: white;
 }
 
 .linegroup:nth-of-type(3n+3){
     text-align: center;
+    font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: white;
 }
 
 .sidenote_right{
@@ -54,7 +67,6 @@ h2{
     font-family: cheap-pine, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white; 
 }
 
 div:first-of-type h2:first-of-type{
@@ -72,28 +84,111 @@ pre{
     color: white;
 }
 
-s:before{
-    content: '0'; 
+div:first-of-type h2:first-of-type:before{
+    content: ' '; 
     height: 93px;
     width: 2px;
     background-color: white;
+    display: block; 
+    margin: auto auto 120px auto;
+}
+
+div:first-of-type h2:first-of-type::after{
+    content: ' '; 
+    height: 93px;
+    width: 2px;
+    background-color: white;
+    display: block; 
+    margin: 150px auto auto auto;
 }
 
 /*---------smart phones----------*/
 @media only screen and (max-width: 800px){
-p{
-    font-family: cheap-pine, sans-serif;
-    font-weight: 400;
-    font-style: normal;  
-}
+    p{
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+    }
+    .linegroup:nth-of-type(3n+2){
+        text-align: left;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: rgb(242, 229, 185);
+    }
+
+    .linegroup:nth-of-type(3n+1){
+        text-align: left;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: rgb(242, 229, 185);
+    }
+
+    div:first-of-type h2:first-of-type{
+        text-align: center;
+        transform-origin: center; 
+        transform: rotate(-90deg);
+        font-size: 6em;
+        margin-bottom: 15px;
+        color: rgb(242, 229, 185);
+     }
+
+     .linegroup:nth-of-type(3n+3){
+        text-align: right;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        color: rgb(242, 229, 185);
+     }
+
+   
+
+
+    
+
 }
 
 
 /*--------tablets-----------------*/
 @media only screen and (min-width: 800px) and (max-width: 1280px){
-p{
-    font-family: cheap-pine, sans-serif;
-    font-weight: 400;
-    font-style: normal;   
-}
+    p{
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;   
+    }
+
+    .linegroup:nth-of-type(3n+2){
+        text-align: right;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: rgb(164, 213, 158);
+    }
+
+    .linegroup:nth-of-type(3n+1){
+        text-align: right;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: rgb(164, 213, 158);
+    }
+
+    .linegroup:nth-of-type(3n+3){
+        text-align: right;
+        font-family: cheap-pine, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: rgb(164, 213, 158);
+    }
+    
+    div:first-of-type h2:first-of-type::after{
+        content: ' '; 
+        height: 93px;
+        width: 2px;
+        background-color: white;
+        display: block; 
+        margin: 150px auto auto auto;
+        color: rgb(164, 213, 158);
+    }
 }
