@@ -47,11 +47,33 @@ h2{
 }
 
 .sidenote_right{
+    text-align: center;
+}
+
+.sidenote_right{
     font-family: cheap-pine, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white; 
 }
+
+div:first-of-type h2:first-of-type{
+   text-align: center;
+   transform-origin: center;
+   transform: rotate(-90deg);
+   font-size: 6em;
+   margin-bottom: 15px;
+}
+
+.sub{
+    margin-top: 300px;
+}
+
+pre{
+    text-align: center;
+    color: white;
+}
+
 /*---------smart phones----------*/
 @media only screen and (max-width: 800px){
 p{
